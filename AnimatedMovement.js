@@ -32,7 +32,7 @@ export default class AnimatedMovement {
       // Handle horizontal flipping
       if (direction === "left") {
         this.sprite.setFlipX(true);
-        this.sprite.anims.play(this.animations.walk[direction], true);
+        this.sprite.anims.play(this.animations.walk.right, true);
       } else {
         // IMPORTANT: Ensure that the animation names match the expected format (e.g., right: "walk-right")
         this.sprite.setFlipX(false);
